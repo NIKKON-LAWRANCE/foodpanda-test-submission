@@ -1,0 +1,4 @@
+CREATE TABLE CustomersWithSuccessfulOrders AS
+SELECT DISTINCT customer_id
+FROM Order
+WHERE is_successful_order = TRUE;
